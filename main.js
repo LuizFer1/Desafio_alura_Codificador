@@ -59,3 +59,10 @@ function descripto(){
     console.log(texto)
     saida.innerHTML = lista.join('')
 }
+
+function copyText() {
+    var texto = document.getElementById("text_out");
+    texto.select();
+    document.execCommand("copy");
+    alert("Texto copiado para a área de transferência");
+  }
