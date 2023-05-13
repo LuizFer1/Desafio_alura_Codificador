@@ -15,15 +15,16 @@
     </header>
     <main>
         <section class="entrada_texto">
-            <textarea type="text" class="text_in" placeholder="Escreva Aqui" style="resize: none "></textarea>
+            <textarea type="text" class="text_in" placeholder="Escreva Aqui" style="resize: none "
+            id="texto"></textarea>
             <p class="alerta">&#9888; apenas letras minúsculas e sem acento.</p>
             <div>
-                <button class="button" id="cript">Criptografar</button>
-                <button class="button_2" id="descript">Descriptografar</button>
+                <button class="button" id="cript" onclick="criptar()">Criptografar</button>
+                <button class="button_2" id="descript" onclick="descripto()">Descriptografar</button>
             </div>
         </section>
         <section class="saida_texto">
-            <textarea class="text_out" placeholder="Nenhum texto Criptografado" style="resize: none"></textarea>
+            <textarea id="text_out" class="text_out" placeholder="Nenhum texto Criptografado" style="resize: none"></textarea>
             <button class="button-copy" id="copy">Copiar</button>
         </section>
     </main>
